@@ -1,0 +1,22 @@
+<view title="driver.Driver.givenName + ' ' + driver.Driver.familyName">
+    <content has-header="true" padding="true">
+
+        <div class="details">
+            <img src="pics/drivers/{{driver.Driver.driverId}}.png" width="100" height="100"/>
+            <h4><strong>{{ driver.Driver.givenName }} {{ driver.Driver.familyName }}</strong></h4>
+            <a href="{{driver.Driver.url}}" target="_blank">Biography</a>
+            <p><strong>Permanent Number :</strong> {{ driver.Driver.permanentNumber }}<br/>
+               <strong> Rank: {{ driver.position }}</strong> <img src="pics/flags/{{driver.Driver.nationality}}.png" /></p>
+
+        </div>
+
+        <list>
+            <item ng-repeat="race in races" >
+                <!-- Custom Directive-->
+                <race-data data="race"></race-data>
+            </item>
+            </item>
+        </list>
+
+    </content>
+</view>
