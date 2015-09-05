@@ -1,12 +1,14 @@
+var app = angular.module('directory', ['ionic']);
+
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'directory' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'directory.services' is found in /js/service
 // controllers are found in /js/controller
-angular.module('directory', ['ionic', 'directory.services', 'directory.driverDetailCtrl', 'directory.directives', 'directory.driverIndexCtrl','directory.raceDirective'])
+//app.module('directory', ['ionic', 'directory.services', 'directory.driverDetailCtrl', 'directory.directives', 'directory.driverIndexCtrl','directory.raceDirective'])
 
 
-  .config(function ($stateProvider, $urlRouterProvider) {
+  app.config(function ($stateProvider, $urlRouterProvider) {
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router

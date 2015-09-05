@@ -1,5 +1,4 @@
-angular.module('directory.raceDirective', [])
-  .directive('raceData', function () {
+app.directive('raceData', function () {
     return {
       scope: {
         race: "=data"

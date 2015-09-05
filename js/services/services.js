@@ -1,6 +1,6 @@
-angular.module('directory.services', [])
 
-  .factory('DriverService', function ($http) {
+
+  app.factory('DriverService', function ($http) {
 
     // We use promises to make this api asynchronous. This is clearly not necessary when using in-memory data
     // but it makes this service more flexible and plug-and-play. For example, you can now easily replace this

@@ -1,5 +1,4 @@
-angular.module('directory.directives', [])
-  .directive('driverData', function () {
+app.directive('driverData', function () {
     return {
       scope: {
         item: "=data"
